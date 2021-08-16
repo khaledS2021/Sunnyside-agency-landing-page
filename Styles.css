@@ -1,0 +1,18 @@
+#navmenu{
+    float: right;
+}
+
+#head{
+    float: left;
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+}
+#texthead{
+    margin: 15px;
+}
+button{
+    border: none;
+    background-color:white;
+    font-family: 'Barlow', sans-serif;
+    
+}
