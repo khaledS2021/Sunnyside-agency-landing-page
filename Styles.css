@@ -1,3 +1,18 @@
+body{
+    display: grid;
+    height: 300vh;
+    width: fit-content;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:1.5fr repeat(3,1fr) 1.5fr repeat(2,1fr);
+     grid-template-areas:  
+    "header header header header"
+    "text1 text1 design1 design1"
+    "design2 design2 text2 text2"
+    "design3 design3 design4 design4"
+    "feedback feedback feedback feedback"
+    "design5 design6 design7 design8"
+    "footer footer footer footer";
+}
 #navmenu{
     float: right;
 }
@@ -6,13 +21,40 @@
     float: left;
     font-size: 20px;
     font-family: 'Barlow', sans-serif;
+    font-weight: bolder;
+    color: white;
 }
 #texthead{
     margin: 15px;
+    grid-area: header;
+    text-align: center;
+    background-image: url("images/desktop/image-header.jpg");
+    background-position: center;
+    background-size: cover;
 }
 button{
     border: none;
-    background-color:white;
+    background-color: hsl(213, 9%, 39%)
     font-family: 'Barlow', sans-serif;
+    font-weight: bold;
     
+}
+#text1{
+grid-area: text1;
+}
+#text2{
+    grid-area: text2;
+}
+#design3{
+    grid-area: design3;
+}
+#design4{
+    grid-area: design4;
+}
+#feedback{
+    grid-area: feedback;
+}
+#footer{
+    grid-area: footer;
+    text-align: center;
 }
