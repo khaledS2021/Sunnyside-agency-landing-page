@@ -1,7 +1,7 @@
 body{
     display: grid;
     height: 300vh;
-    width: fit-content;
+    width: 100%;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows:1.5fr repeat(3,1fr) 1.5fr repeat(2,1fr);
      grid-template-areas:  
@@ -15,6 +15,9 @@ body{
 }
 #navmenu{
     float: right;
+    padding-top: 40px;
+    padding-right: 40px;
+    word-spacing: 25px;
 }
 
 #head{
@@ -23,27 +26,39 @@ body{
     font-family: 'Barlow', sans-serif;
     font-weight: bolder;
     color: white;
+    padding-left: 15px;
+    padding-top: 35px;
+    margin-left: 40px;
+    transform: scale(1.5);
 }
 #texthead{
-    margin: 15px;
     grid-area: header;
     text-align: center;
     background-image: url("images/desktop/image-header.jpg");
     background-position: center;
     background-size: cover;
+    height: 550px;
 }
 button{
     border: none;
-    background-color: hsl(213, 9%, 39%);
+    background-color: hsl(200, 100%, 62%);
     font-family: 'Barlow', sans-serif;
-    font-weight: bold;
-    
+    font-weight: 600;
+    border-radius: 15px;
+    height: 40px;
+    width: 70px;
+    color: white;
 }
 #text1{
-grid-area: text1;
+    grid-area: text1;
+    margin-left: 15px;
+    padding-left: 150px;
+    margin-top: 170px;
 }
 #text2{
     grid-area: text2;
+    margin-left: 100px;
+    margin-top: 170px;
 }
 #design3{
     grid-area: design3;
@@ -57,4 +72,50 @@ grid-area: text1;
 #footer{
     grid-area: footer;
     text-align: center;
+}
+.attribution{
+    grid-area: footer;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 50px;
+    letter-spacing: 8px;
+    color: white;
+    text-transform: uppercase;
+
+}
+h2{
+    font-family:'Fraunces', serif;
+    padding-right: 190px;
+}
+p{
+    padding-right: 90px;
+}
+h4{
+    font-family:'Fraunces', serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    
+    
+}
+#design1{
+    background-image: url("/images/desktop/image-transform.jpg");
+    grid-area: design1;
+    background-position: center;
+    height: 600px;
+}
+#design2{
+    background-image: url("/images/desktop/image-stand-out.jpg");
+    grid-area: design2;
+    background-position: center;
+    height: 600px;
+}
+.yellow{
+    text-decoration:underline 3px hsl(51, 100%, 49%);
+}
+.red{
+    text-decoration:underline 3px hsl(7, 99%, 70%);
+}
+#design3{
+
 }
